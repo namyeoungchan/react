@@ -1,21 +1,10 @@
-import {Link} from "react-router-dom";
-import * as PropTypes from "prop-types";
+import CommonBtn from "./common/CommonBtn.jsx";
 
-function Button(props) {
-    console.log(props)
-    
-    return null;
-}
-
-Button.propTypes = {children: PropTypes.node};
 const Main = () => {
 
     return (
         <>
-            <Button>
-                <Link to={'/login'}/>
-            </Button>
-
+            <CommonBtn text={'로그인'} to={'/login'}/>
         </>
 
     );
